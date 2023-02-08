@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import PieChart from "./components/pie-chart";
+import StackedBarChart from "./components/stacked-bar-chart";
+import {Grid} from "@mui/material";
+import GroupedBarChart from "./components/grouped-bar-chart";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+export default function App() {
+
+    return (
+      <div className="App">
+          <Grid
+              container
+              spacing={2}
+              direction="row"
+              justify="flex-start"
+              alignItems="flex-start"
+          >
+              <Grid item xs={4}>
+                  <PieChart />
+              </Grid>
+              <Grid item xs={4}>
+                  <StackedBarChart />
+              </Grid>
+              <Grid item xs={4}>
+                  <GroupedBarChart />
+              </Grid>
+          </Grid>
+      </div>
   );
 }
 
-export default App;
