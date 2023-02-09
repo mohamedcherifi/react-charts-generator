@@ -22,9 +22,7 @@ const PieChart = () => {
     };
 
     return (
-        <div>
-            <Pie options={options} data={data} />
-        </div>
+        <Pie options={options} data={data} />
     );
 };
 export default PieChart;

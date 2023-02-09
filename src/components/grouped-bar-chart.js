@@ -54,9 +54,7 @@ const GroupedBarChart = () => {
         ],
     };
     return (
-        <div>
-            <Bar options={options} data={data} />`
-        </div>
+        <Bar options={options} data={data} />
     );
 };
 
